@@ -9,12 +9,10 @@ document.addEventListener("DOMContentLoaded", function () {
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4) {
                 if (this.status != 200) return;
-
-
-                document.querySelectorAll(".topnav, .sidenav, .card").forEach(function (elm) {
+                document.querySelectorAll(".topnav, .sidenav").forEach(function (elm) {
                     elm.innerHTML = xhttp.responseText;
                 });
-                document.querySelectorAll('.sidenav a, .topnav a, .card a')
+                document.querySelectorAll('.sidenav a, .topnav a')
                     .forEach(function (elm) {
                         elm.addEventListener('click', function (event) {
                             var sidenav = document.querySelector('.sidenav');

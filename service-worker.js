@@ -1,4 +1,4 @@
-const CACHE_NAME = "submission-1-v1";
+const CACHE_NAME = "submission-1-v2";
 var urlsToCache = [
     "/",
     "/navigation.html",
@@ -7,7 +7,9 @@ var urlsToCache = [
     "/pages/about.html",
     "/pages/contact.html",
     "/pages/category.html",
+    "/css/materialize.css",
     "/css/materialize.min.css",
+    "/js/materialize.js",
     "/js/materialize.min.js",
     "/js/navigation.js",
     "/assets/1.jpg",
