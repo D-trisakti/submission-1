@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (this.status != 200) return;
 
 
-                document.querySelectorAll(".topnav, .sidenav").forEach(function (elm) {
+                document.querySelectorAll(".topnav, .sidenav, .card").forEach(function (elm) {
                     elm.innerHTML = xhttp.responseText;
                 });
-                document.querySelectorAll('.sidenav a, .topnav a')
+                document.querySelectorAll('.sidenav a, .topnav a, .card a')
                     .forEach(function (elm) {
                         elm.addEventListener('click', function (event) {
                             var sidenav = document.querySelector('.sidenav');
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 } else if (this.status == 404) {
                     content.innerHTML = "<p>Halaman tidak ditemukan.</p>";
                 } else {
-                    content.innerHTML = "<p>Ups.. halaman tidak dapat diakses.</p>";
+                    content.innerHTML = "<p>halaman tidak dapat diakses.</p>";
                 }
             }
         };

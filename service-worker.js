@@ -9,7 +9,12 @@ var urlsToCache = [
     "/pages/category.html",
     "/css/materialize.min.css",
     "/js/materialize.min.js",
-    "/js/navigation.js"
+    "/js/navigation.js",
+    "/assets/1.jpg",
+    "/assets/2.jpg",
+    "/assets/3.jpg",
+    "/assets/map.PNG",
+    "/assets/store-icon.png",
 ];
 
 self.addEventListener("install", function (event) {
