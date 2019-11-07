@@ -1,0 +1,16 @@
+{
+    "name": "My Toko",
+    "short_name": "My Toko",
+    "description": "Aplikasi My Toko Menggunakan PWA",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#FF3726",
+    "theme_color": "#FF3726",
+    "icons": [
+        {
+            "src": "assets/store-icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
